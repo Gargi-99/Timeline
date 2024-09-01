@@ -1,0 +1,265 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: pop;
+    src: url(./Fonts/Poppins-Medium.ttf);
+}
+
+body {
+    background-color: #EFFFFB;
+    /* Light cream */
+    color: #021526;
+    /* Dark blue */
+    font-family: pop;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #021526;
+    /* Dark blue */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #EFFFFB;
+    /* Light cream */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #6EACDA;
+    /* Light blue */
+}
+
+/* Main Container Styles */
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.headimage {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect */
+}
+
+.headimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect */
+}
+
+.headimage:hover {
+    transform: scale(1.3);
+    /* Scale up the head image container */
+}
+
+.head_1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #03346E;
+    /* Darker blue */
+}
+
+.head_1 span {
+    color: #6EACDA;
+    /* Light blue */
+}
+
+.head_2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #03346E;
+    /* Darker blue */
+    margin-top: 3px;
+}
+
+/* About Page Styles */
+.about-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-page h1 {
+    font-size: 36px;
+    color: #03346E;
+    /* Darker blue */
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    font-size: 18px;
+    color: #021526;
+    /* Dark blue */
+    line-height: 1.6;
+}
+
+/* Timeline Styles */
+ul {
+    display: flex;
+    margin-top: 80px;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li .icon {
+    font-size: 35px;
+    color: #03346E;
+    /* Darker blue */
+    margin: 0 60px;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect */
+}
+
+ul li .icon:hover {
+    transform: scale(1.5);
+    /* Scale up the icons on hover */
+}
+
+ul li .text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #03346E;
+    /* Darker blue */
+}
+
+/* Progress Div Styles */
+ul li .progress {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6EACDA;
+    /* Light blue */
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #021526;
+    /* Dark blue */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect */
+}
+
+.progress:hover {
+    transform: scale(1.5);
+    /* Scale up the progress circles on hover */
+}
+
+.progress::after {
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: #6EACDA;
+    /* Light blue */
+    right: 30px;
+}
+
+.one::after {
+    width: 0;
+    height: 0;
+}
+
+ul li .progress .uil {
+    display: none;
+}
+
+ul li .progress p {
+    font-size: 13px;
+}
+
+/* Active Progress Styles */
+ul li .active {
+    background-color: #03346E;
+    /* Darker blue */
+    display: grid;
+    place-items: center;
+}
+
+li .active::after {
+    background-color: #03346E;
+    /* Darker blue */
+}
+
+ul li .active p {
+    display: none;
+}
+
+ul li .active .uil {
+    font-size: 20px;
+    display: flex;
+}
+
+/* Responsive Styles */
+@media (max-width: 980px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        flex-direction: row;
+    }
+
+    ul li .progress {
+        margin: 0 30px;
+    }
+
+    .progress::after {
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .one::after {
+        height: 0;
+    }
+
+    ul li .icon {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .head .head_1 {
+        font-size: 24px;
+    }
+
+    .head .head_2 {
+        font-size: 16px;
+    }
+}
