@@ -1,29 +1,21 @@
 /* Navbar Styles */
 .navbar {
     background-color: #021526;
-    /* Dark blue */
     padding: 20px;
-    /* Increased padding for more height */
     text-align: center;
-    /* Added width to make it span the entire width */
     width: 100%;
 }
 
 .navbar a {
     color: #EFFFFB;
-    /* Light cream */
     text-decoration: none;
     margin: 0 30px;
-    /* Increased margin for more spacing */
     font-size: 22px;
-    /* Increased font size for larger text */
     transition: color 0.3s ease-in-out;
-    /* Smooth color transition */
 }
 
 .navbar a:hover {
     color: #6EACDA;
-    /* Light blue */
 }
 
 * {
