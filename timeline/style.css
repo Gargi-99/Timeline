@@ -22,16 +22,21 @@ body {
 .navbar {
     background-color: #021526;
     /* Dark blue */
-    padding: 15px;
+    padding: 20px;
+    /* Increased padding for more height */
     text-align: center;
+    /* Added width to make it span the entire width */
+    width: 100%;
 }
 
 .navbar a {
     color: #EFFFFB;
     /* Light cream */
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
+    margin: 0 30px;
+    /* Increased margin for more spacing */
+    font-size: 22px;
+    /* Increased font size for larger text */
     transition: color 0.3s ease-in-out;
     /* Smooth color transition */
 }
@@ -64,7 +69,6 @@ body {
     overflow: hidden;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
-    /* Smooth scaling effect */
 }
 
 .headimage img {
@@ -72,31 +76,26 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-    /* Smooth scaling effect */
 }
 
 .headimage:hover {
     transform: scale(1.3);
-    /* Scale up the head image container */
 }
 
 .head_1 {
     font-size: 30px;
     font-weight: 600;
     color: #03346E;
-    /* Darker blue */
 }
 
 .head_1 span {
     color: #6EACDA;
-    /* Light blue */
 }
 
 .head_2 {
     font-size: 16px;
     font-weight: 600;
     color: #03346E;
-    /* Darker blue */
     margin-top: 3px;
 }
 
@@ -109,14 +108,12 @@ body {
 .about-page h1 {
     font-size: 36px;
     color: #03346E;
-    /* Darker blue */
     margin-bottom: 20px;
 }
 
 .about-page p {
     font-size: 18px;
     color: #021526;
-    /* Dark blue */
     line-height: 1.6;
 }
 
@@ -136,36 +133,29 @@ ul li {
 ul li .icon {
     font-size: 35px;
     color: #03346E;
-    /* Darker blue */
     margin: 0 60px;
     transition: transform 0.3s ease-in-out;
-    /* Smooth scaling effect */
 }
 
 ul li .icon:hover {
     transform: scale(1.5);
-    /* Scale up the icons on hover */
 }
 
 ul li .text {
     font-size: 14px;
     font-weight: 600;
     color: #03346E;
-    /* Darker blue */
 }
 
-/* Progress Div Styles */
 ul li .progress {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #6EACDA;
-    /* Light blue */
     margin: 14px 0;
     display: grid;
     place-items: center;
     color: #021526;
-    /* Dark blue */
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -174,7 +164,7 @@ ul li .progress {
 
 .progress:hover {
     transform: scale(1.5);
-    /* Scale up the progress circles on hover */
+    /* Scales up the progress circle on hover */
 }
 
 .progress::after {
@@ -183,7 +173,6 @@ ul li .progress {
     width: 125px;
     height: 5px;
     background-color: #6EACDA;
-    /* Light blue */
     right: 30px;
 }
 
@@ -203,14 +192,12 @@ ul li .progress p {
 /* Active Progress Styles */
 ul li .active {
     background-color: #03346E;
-    /* Darker blue */
     display: grid;
     place-items: center;
 }
 
 li .active::after {
     background-color: #03346E;
-    /* Darker blue */
 }
 
 ul li .active p {
